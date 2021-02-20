@@ -1,2 +1,11 @@
+stages:
+- name: simple
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: login-page
+      pushRemote: true
+      registry: reg.406.csie.nuu.edu.tw
 timeout: 60
 notification: {}
